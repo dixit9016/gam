@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style media="screen">
+    body {
+      margin: 0;
+      background-color: #000000;
+    }
+
+    canvas {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .speed-wrapper {
+      position: absolute;
+      right: 40px;
+      bottom: 30px;
+      font-size: 30px;
+    }
+
+    .speed-info {
+      display: flex;
+    }
+
+    .circle-title {
+      margin-top: -7px;
+      margin-bottom: 12px;
+    }
+
+    .circle-info .circle {
+      text-align: left;
+    }
+
+    .circles {
+      width: 100px;
+      margin-top: 32px;
+      font-size: 18px;
+    }
+
+    .sources {
+      display: none;
+    }
+
+  </style>
+
+  <div class="sources">
+    <img id="img-player" src="assets/car.png" alt="">
+    <img id="img-road" src="assets/road.jpg" alt="">
+    <img id="img-enemy" src="assets/enemy.png" alt="">
+    <img id="img-tree" src="assets/tree.png" alt="">
+    <img id="img-explosprite" src="assets/explosprite.png" alt="">
+  </div>
+  <div id="app">
+    <div class="wrapper">
+      <canvas id="canvas"></canvas>
+      <div class="speed-wrapper">
+        <div class="speed-info">
+          <div id="speed"></div>
+          <div>&nbsp;km/h</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="config.js" defer></script>
+  <script src="actors.js" defer></script>
+  <script src="helpers.js" defer></script>
+  <script src="road.js" defer></script>
+  <script src="index.js" defer></script>
+</body>
+</html>
